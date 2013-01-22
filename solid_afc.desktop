@@ -4,7 +4,7 @@ Type=Service
 Actions=open;
 
 [Desktop Action open]
-Exec=kioclient exec afc:udi=%i/
+Exec=kioclient exec afc://
 Icon=system-file-manager
 Name=Open with File Manager
 Name[bs]=Otvori menadžerom datoteka
@@ -23,4 +23,5 @@ Name[ro]=Deschide cu gestionarul de fișiere
 Name[sk]=Otvoriť v správcovi súborov
 Name[sv]=Öppna med filhanterare
 Name[uk]=Відкрити у програмі для керування файлами
+Name[zh_CN]=用文件管理器打开
 Name[x-test]=xxOpen with File Managerxx
