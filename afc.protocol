@@ -1,0 +1,15 @@
+[Protocol]
+exec=kio_afc
+protocol=afc
+input=none
+output=filesystem
+listing=Name,Type,Size,Access
+reading=true
+writing=true
+makedir=true
+deleting=true
+opening=true
+moving=true
+copyFromFile=true
+copyToFile=true
+Icon=network-workgroup
