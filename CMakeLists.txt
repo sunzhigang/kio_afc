@@ -21,3 +21,11 @@ target_link_libraries(kio_afc ${KDE4_KIO_LIBS} ${libimobiledevice_LIBRARIES})
 install(TARGETS kio_afc  DESTINATION ${PLUGIN_INSTALL_DIR})
 
 install(FILES afc.protocol DESTINATION  ${SERVICES_INSTALL_DIR})
+
+
+########### install files ###############
+
+install( FILES afc-network.desktop  DESTINATION  ${DATA_INSTALL_DIR}/konqueror/dirtree/remote )
+install( FILES solid_afc.desktop  DESTINATION  ${DATA_INSTALL_DIR}/solid/actions )
+install( FILES afc.protocol  DESTINATION  ${SERVICES_INSTALL_DIR} )
+install( FILES afc-network.desktop  DESTINATION  ${DATA_INSTALL_DIR}/remoteview )

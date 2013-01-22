@@ -114,10 +114,10 @@ void AfcProtocol::ProcessEvent(const idevice_event_t *event)
     {
         kDebug(KIO_AFC) << "IDEVICE_DEVICE_ADD";
 
-        AfcDevice* dev = new AfcDevice ( event->uuid, this );
+        AfcDevice* dev = new AfcDevice ( event->udid, this );
         if (dev->isValid())
         {
-            _devices.insert( QString(event->uuid), dev);
+            _devices.insert( QString(event->udid), dev);
         }
         else
             delete dev;
@@ -126,9 +126,9 @@ void AfcProtocol::ProcessEvent(const idevice_event_t *event)
     {
         kDebug(KIO_AFC) << "IDEVICE_DEVICE_REMOVE";
 
-        AfcDevice* dev = _devices[QString(event->uuid)];
+        AfcDevice* dev = _devices[QString(event->udid)];
         delete dev;
-        _devices.remove(QString(event->uuid));
+        _devices.remove(QString(event->udid));
     }
 }
 

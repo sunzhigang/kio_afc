@@ -1,0 +1,24 @@
+[Desktop Entry]
+Icon=multimedia-player
+Name=AFC Devices
+Name[bs]=AFC Devices
+Name[cs]=Zařízení AFC
+Name[de]=AFC-Geräte
+Name[el]=Συσκευές AFC
+Name[et]=AFC seadmed
+Name[fi]=AFC-laitteet
+Name[ga]=Gléasanna AFC
+Name[gl]=Dispositivos AFC
+Name[hu]=AFC eszközök
+Name[it]=Dispositivi AFC
+Name[nl]=AFC-apparaten
+Name[pt]=Dispositivos AFC
+Name[pt_BR]=Dispositivos AFC
+Name[ro]=Dispozitive AFC
+Name[sk]=Zariadenia AFC
+Name[sv]=AFC-enheter
+Name[uk]=Пристрої AFC
+Name[x-test]=xxAFC Devicesxx
+Open=false
+Type=Link
+URL=afc:/
