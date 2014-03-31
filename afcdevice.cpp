@@ -44,10 +44,11 @@ AfcDevice::AfcDevice( const char* id, AfcProtocol* proto ) :_proto(proto), openF
     if ( LOCKDOWN_E_SUCCESS == lockdownd_client_new_with_handshake (_dev, &lockdown_cli, "kio_afc") )
     {
         //Afc service
-        uint16_t port;
-        if ( LOCKDOWN_E_SUCCESS == lockdownd_start_service (lockdown_cli, AFC_PROTO, &port) )
+        //uint16_t port;
+		lockdownd_service_descriptor_t service = NULL;
+        if ( LOCKDOWN_E_SUCCESS == lockdownd_start_service (lockdown_cli, AFC_PROTO, &service) )
         {
-            afc_client_new (_dev, port, &_afc);
+            afc_client_new (_dev, service, &_afc);
         }
 
         //device name
