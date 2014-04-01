@@ -54,7 +54,7 @@ AfcDevice::AfcDevice( const char* id, AfcProtocol* proto ) :_proto(proto), openF
         //device name
         char* name = NULL;
         lockdownd_get_device_name (lockdown_cli, &name);
-        _name = name;
+        _name = QString::fromUtf8(name);
         free (name);
 
         //device model
